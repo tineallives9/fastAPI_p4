@@ -1,0 +1,128 @@
+/* TodoList.css */
+
+/* Global Styles */
+body {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .light-mode {
+    background-color: lightblue;
+    color: black;
+  }
+  
+  /* TodoList Container */
+  .todo-list-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Dark Mode Button */
+  .dark-mode-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Todo List Box */
+  .todo-box {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 400px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .todo-box h2 {
+    text-align: center;
+  }
+  
+  /* Task Input Area */
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    color: black;
+  }
+  
+  .task-input button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .task-input button.update {
+    background-color: #FFA500;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    background-color: #e0e0e0;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Task List */
+  .task-list {
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task-list li .completed {
+    text-decoration: line-through;
+    color: #32CD32;
+  }
+  
